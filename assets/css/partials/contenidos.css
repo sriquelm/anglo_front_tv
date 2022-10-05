@@ -1,0 +1,690 @@
+@charset "UTF-8";
+
+.tit-dashboard {
+    display: flex;
+    text-align: center;
+    max-width: 74%;
+    margin: auto;
+    margin-bottom: 40px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Dashboard */
+
+.card-dashboard {
+    background-color: #070C3F60;
+    display: flex;
+    border-radius: 24px;
+    box-shadow: 0px 0px 16px 3px #ffffff10;
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    padding: 24px 32px;
+    flex-direction: column;
+}
+
+.card-dashboard .operacionAA  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 8px;
+}
+
+.card-dashboard .irAoperación {
+    position: relative;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.card-dashboard .irAoperación span {
+    border-bottom: 1px dotted #5761C8;
+    width: 100%;
+    height: 1px;
+    display: block;
+    margin-top: 8px;
+}
+
+.card-dashboard .irAoperación a {
+    position: absolute;
+    width: 80px;
+    left: 50%;
+    margin-left: -40px;
+    z-index: 2;
+    background: #0e145d;
+    top: -1px;
+    text-align: center;
+}
+
+.card-dashboard .operacionAA .nombreOperacion { 
+    font-size: 24px;
+    font-family: 'monserrat', sans-serif;
+}
+
+.card-dashboard .operacionAA .icon-asset {
+    font-size: 16px;
+}
+
+.card-dashboard .operacionAA .icon-truck svg {
+    width: 100%;
+    height: auto;
+    max-width: 26px;
+    margin-left: 8px;
+}
+
+.card-dashboard .operacionAA .icon-fundicion svg {
+    width: 100%;
+    height: auto;
+    max-width: 26px;
+    margin-left: 8px;
+    top: 6px;
+    position: relative;
+}
+.card-dashboard .group-tooltip {
+    position: relative;
+    display: block;
+    width: 16px;
+    height: 16px;
+    cursor: default;
+}
+
+.card-dashboard .group-tooltip .tooltip  {
+    display: none;
+    position: absolute;
+    width: 210px;
+    left: -103px;
+    top: -100px;
+    padding: 12px;
+    background: #000000;
+    border-radius: 8px;
+}
+
+.card-dashboard .group-tooltip .tooltip p {
+    margin-bottom: 0!important;
+}
+
+.card-dashboard .group-tooltip:hover .tooltip {
+    display: block;
+    opacity: 1;
+}
+
+.card-dashboard .group-tooltip .tooltip::after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #000;
+    left: calc(50% - 5px);
+    bottom: -10px;
+}
+
+.card-dashboard .controles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
+
+.card-dashboard .controles .cantidadCC {
+    color: #FFCA48;
+}
+
+.card-dashboard .controles .CantidadAV {
+    color: #FFCA48;
+}
+
+.card-dashboard .grafico {
+    display: flex;
+    height: 100px;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 48px;
+    justify-content: space-between;
+}
+
+.card-dashboard .grafico .group-tooltip .icon-asset {
+    font-size: 16px;
+}
+.card-dashboard .grafico .grupo-tipo {
+    display: flex;
+}
+
+.card-dashboard .grafico .grafico-contenedor {
+    width: 100px;
+    height: 100px;
+}
+
+.card-dashboard .grafico .grafico-dinamico {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-dashboard .grafico .grafico-dinamico .dinamico {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    border-radius: 50%;
+    background-color: gray;
+    background-position:center center;
+    background-size: 50%;
+    background-repeat:no-repeat;
+    background-image:url('../../img/chartOK.svg');
+}
+
+.dinamico.\#58D68D {
+    background-image:url('../../img/chartOK.svg');
+}
+.dinamico.\#E74C3C {
+    background-image:url('../../img/chartERROR.svg');
+}
+.dinamico.\#FFE802 {
+    background-image:url('../../img/chartERROR.svg');
+}
+.dinamico.\#FF7A39 {
+    background-image:url('../../img/chartERROR.svg');
+}
+
+.card-dashboard .grafico .grafico-dinamico svg {
+    margin-top: -17px;
+    margin-left: -6px;
+}
+.card-dashboard .grafico .grafico-dinamico.OK {
+    background:url(../../img/chartOK.svg) center center no-repeat ;
+    border: 0;
+}
+
+.sub-header .group-name {
+    width: auto;
+    display: table;
+}
+
+.sub-header .grupoOperacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 8px;
+    font-size: 21px;
+}
+
+.sub-header .grupoOperacion .icon-truck {
+    margin: 3px 0 0 8px;
+}
+
+.filtros-tabla {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.filtros-tabla .group-select {
+    display: flex;
+    flex-direction: column;
+}
+
+.filtros-tabla .group-select label {
+    margin-left: 16px;
+    margin-bottom: 8px;
+}
+
+select {
+    margin-left: 8px;
+    padding: 8px;
+    border-radius:4px;
+    background:#E6E7ED; 
+}
+
+.filtros-tabla label { 
+    line-height: 40px;
+}
+
+input[type="search"] {
+    margin-left: 8px;
+    padding: 8px;
+    border-radius:4px;
+    background:#E6E7ED; 
+}
+
+.detalle-PUE {  
+    display: flex;
+    flex-direction: column;
+    background: #ffffff10;
+    border-radius: 16px;
+    border: 1px dotted #ffffff;
+    padding: 24px;
+    width: 100%;
+    min-height: 60px;
+    margin: 30px 0;
+}
+
+.detalle-PUE h3 { 
+    margin-bottom: 16px;
+}
+.detalle-PUE p { 
+    margin-bottom: 8px;
+}
+.detalle-PUE b { 
+    display: block;
+    clear: both;
+}
+
+.fechaPUE { 
+    display: block;
+    margin-top: 8px;
+}
+.fechaPUE span {
+    color: #FFE802;
+}
+
+.tabcontent .group-select {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.tabcontent .group-select label {
+    margin-bottom: 8px;
+    margin-left: 16px;
+}
+
+.tabcontent select {
+    padding: 8px;
+    border-radius:4px;
+    background:#E6E7ED; 
+}
+
+textarea {
+    border: 1px solid #c4c4c4;
+    border-radius: 6px;
+    padding: 8px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.btn {
+    text-align: center;
+    min-width: 80px;
+    line-height: 36px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 0px 16px;
+}
+
+.btn.primario {
+    border: 1px solid #0A1F51;
+    background: #0A1F51;
+    color: #fff;
+}
+
+.btn.primario:hover {
+    background: #163889;}
+
+.btn.secundario {
+    border: 1px solid #0A1F51;
+    color: #0A1F51;
+    background: #ffffff;
+}
+.btn.secundario:hover {
+    background: #efefef;
+}
+
+.botones {
+    text-align: right;
+}
+
+/* Notificaciones - Enviar alerta */
+
+.cambiodeestado { 
+    padding: 16px 160px;
+    border: 1px solid #1E1E1E;
+    border-radius: 8px;
+    margin: 16px 0;
+}
+
+.modal.alerta .cont-icon  {
+    margin: auto;
+    display: block;
+    border-radius: 100%;
+    border: 1px solid #FF9F43;
+    padding: 13px;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+}
+
+
+/* Accordion-new-guideline */
+
+.tabla-aa .group .collapse.mantencion { 
+    display: none; 
+}
+
+.tabla-aa .group .mantencion { 
+    max-height: 100em;
+ }
+
+.tabla-aa .mantencion { 
+    overflow: hidden; 
+    max-height: 0!important; 
+    position: relative;  
+    transition: all 0.4s cubic-bezier(0.865, 0.14, 0.095, 0.87); 
+}
+
+.ScrollTable { 
+    max-width: 1200px; 
+    overflow-y: hidden; 
+    overflow-x: auto;
+}
+
+.ScrollTable .row {
+    min-width: 1000px;
+}
+
+@media screen and (max-width: 600px) {
+    .accesos-operaciones {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    h1 {
+        font-size: 28px;
+    }
+    .sub-header .grupoOperacion {
+        font-size: 16px;
+    }
+    .accesos-operaciones .acceso {
+        margin-left: 0;
+    }
+}
+
+
+.icon-circle a { 
+    color: #fff;
+}
+
+.datepicker table td, .datepicker table th {
+    color: #1e1e1e !important;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+    padding: 3px;
+}
+
+.datepicker table td:hover {
+    background-color: #ececec;
+}
+
+.date.form-control {
+    width: 140px!important;
+    background-image: url(../../img/date_range.png);
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position-x: 110px;
+    background-position-y: 4px;
+    width: 200px;
+}
+
+.form-label-empty {
+    min-height: 30px;
+    display: block;
+}
+
+.VerTablaAlertas .icon-asset {
+    top: 2px;
+    position: relative;
+    font-size: 18px!important;
+}
+
+.CantidadHistorico {
+    position: relative;
+    top: 37px;
+    margin-bottom: 0;
+}
+a{color: white!important;}
+
+/* Ajustes pantallas Anglo */
+
+@media screen and (min-width: 1900px) {
+    body {
+        font-size: 28px;
+    }
+    .container {
+      max-width: 3300px;
+    }
+    .container-max-width {
+        max-width: 3300px;
+    }
+    .header {
+        margin-bottom: 62px;
+    }
+    .card-dashboard .irAoperación a {
+        width: 140px;
+        margin-left: -70px;
+    }
+    .logoAA-blanco svg {
+        height: 130px!important;
+        width: auto;
+    }
+    .display1 {
+        font-size: 85px;
+        line-height: 85px;
+        font-weight: 500;
+        color: #FF9F43;
+    }
+
+    h1 { 
+        font-size: 68px;
+        font-weight: normal;
+        color: #FF9F43;
+    }
+    h2 { 
+        font-size: 54px;
+        font-weight: normal;
+    }
+    h3 { 
+        font-size: 44px;
+        font-weight: normal;
+    }
+    h4 { 
+        font-size: 35px;
+        font-weight: normal;
+    }
+    p { 
+        font-size: 28px;
+        font-weight: normal;
+        line-height: 34px;
+    }
+    .header .tool-user .actualizacion .textos-actualizacion .label {
+        font-size: 22px;
+    }
+    .header .tool-user .actualizacion .textos-actualizacion .fechahora {
+        font-size: 20px;
+    }
+    .header .tool-user .usuario .textos-usuario .saludo { 
+        font-size: 22px;
+    }
+    
+    .header .tool-user .usuario .textos-usuario .nombreusuario {
+        font-size: 22px;
+    }
+
+    .header .tool-user .actualizacion .ico-reloj {
+        width: 42px;
+        margin-left: 16px;
+    }
+
+    .header .tool-user .actualizacion .ico-reloj svg {
+        width: 42px;
+        height: 42px;
+    }
+    .header .tool-user .notificaciones {
+        margin: 0 37px;
+    }    
+    .header .tool-user .notificaciones .ico-bell {
+        width: 42px;
+    }
+    .header .tool-user .notificaciones .ico-bell svg {
+        width: 42px;
+        height: 42px;
+    }
+    .header .tool-user .notificaciones .marcador {
+        width: 26px;
+        height: 26px;
+        font-size: 20px;
+        top: 2px;
+        padding-top: 0px;
+        font-weight: bold;
+        left: 25px;
+    }
+    .header .tool-user .usuario .ico-user {
+        margin-left: 18px;
+        padding: 4px;
+        width: 56px;
+        height: 56px;
+    }
+    .header .tool-user .usuario .ico-user svg {
+        width: 36px;
+        height:36px;
+    }
+    .header .tool-user .salir {
+        margin-left: 36px;
+    }
+    .header .tool-user .salir svg {
+        width: 28px;
+        height: 28px;
+        margin-top: 8px;
+    }
+    .card-dashboard .operacionAA .nombreOperacion {
+        font-size: 54px;
+        width: 60%;
+    }
+    
+    .card-dashboard .operacionAA .icon-truck svg {
+        width: 100%;
+        height: auto;
+        max-width: 56px;
+        margin-left: 8px;
+    }
+    .card-dashboard .operacionAA .icon-fundicion svg {
+        width: 100%;
+        height: auto;
+        max-width: 56px;
+        margin-left: 8px;
+        top: 6px;
+        position: relative;
+    }
+    .card-dashboard .operacionAA .icon-truck svg {
+        width: 100%;
+        height: auto;
+        max-width: 56px;
+        margin-left: 8px;
+    }
+    .card-dashboard .irAoperación {
+        margin-bottom: 36px;
+    }
+    .card-dashboard .irAoperación span {
+    margin-top: 21px;
+    }
+    .card-dashboard .operacionAA .icon-asset {
+        font-size: 36px;
+    }
+    .card-dashboard .group-tooltip {
+        width: 36px;
+        height: 36px;
+    }
+    .card-dashboard .group-tooltip .tooltip {
+        width: 240px;
+        left: -107px;
+        top: -260px;
+        padding: 24px;
+    }
+    .card-dashboard .grafico .grafico-dinamico {
+        width: 170px;
+        height: 170px;
+    }
+    .card-dashboard .grafico .grafico-dinamico svg {
+        zoom: 170%;
+        margin-top: -15px;
+        margin-left: -5px;
+    }
+    .card-dashboard .grafico .grupo-tipo ~ span {
+        font-size: 28px;
+    }
+    .card-dashboard .grafico {
+        height: 170px;
+    }
+    .card-dashboard .grafico .grafico-dinamico.OK {
+        width: 170px;
+        height: 95px;
+        background-size: contain;
+    }
+    .header .tool-user .notificaciones .tooltip-notif {
+        width: 310px;
+        left: -138px;
+        top: 70px;
+        padding: 24px;
+    }
+    .header .tool-user .notificaciones:hover .tooltip-notif ul li {
+        font-size: 22px;
+        width: 254px;
+    }
+    .ScrollTable {
+        max-width: 3276px;
+    }
+    .accesos-operaciones .acceso .icon-truck svg {
+        max-width: 30px;
+    }
+    .accesos-operaciones .acceso .icon-fundicion svg {
+        max-width: 30px;
+    }
+    .VerTablaAlertas .icon-asset {
+        font-size: 28px!important;
+        top: 9px;
+    }
+    .margin2-top {
+        margin-top: 24px!important;
+    }
+    .margin2-right {
+        margin-right: 24px!important;
+    }
+    .btn {
+        text-align: center;
+        min-width: 140px;
+        line-height: 36px;
+        font-size: 24px;
+        height: 50px;
+    }
+    ul li {
+        font-size: 24px;
+    }
+    .datepicker.datepicker-dropdown {
+        transform: scale(1.7);
+        margin-top: -2%;
+    }
+    select, .date.form-control {
+        min-width: 140px;
+        line-height: 36px;
+        font-size: 24px;
+        height: 50px;
+    }
+    .date.form-control {
+        width: 140px!important;
+        background-image: url(../../img/date_range.png);
+        background-repeat: no-repeat;
+        background-size: 34px;
+        background-position-x: 99px;
+        background-position-y: 8px;
+    }    
+} 

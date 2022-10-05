@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+.color1 {
+    color: #ff9f43 !important;;
+ }
+
+ .color2 {
+     color: #FFE802;
+ }
+
+ .color3 {
+     color: #18D642;
+ }
+
+ .color4 {
+     color: #ED1111;
+ }
+
+ .color6 {
+     color:#D6D6D6; 
+ }
+
+ .color7 {
+     color:#0A1F51;
+ }
+
+ .color8 {
+     color:#ffffff;
+ }
+
+ .color9 {
+    color:#FFCA48;
+}
+
+.color-link { 
+    color: #fff!important; 
+}
+
+.bg-white {
+    background-color: #ffffff;
+}

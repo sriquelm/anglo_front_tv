@@ -1,0 +1,74 @@
+
+.modal-content.open {
+    display: block;
+}
+.modal-content.close { 
+    display: none;
+}
+.modal-content .backlight { 
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: #000;
+    opacity: 0.5;
+    top: 0px;
+    bottom: 0px;
+    left:0px;
+    right: 0px;
+    z-index: 100;
+}
+.modal-content .modal {
+    display: block;
+    background: #fff;
+    border-radius: 10px;
+    position: fixed;
+    z-index: 101;
+    min-height: 200px;
+    min-width: 600px;
+    padding: 24px;
+}
+
+.modal-content .modal.alerta {
+    min-height: 300px;
+    width: 600px;
+    left: calc(50% - 300px);
+    top: calc(50% - 200px);
+}
+
+.modal-content .modal.video {
+    height: 470px;
+    width: 616px;
+    left: calc(50% - 308px);
+    top: calc(50% - 240px);
+}
+
+.modal-content .modal .closeModal { 
+    float: right;
+    right: 18px;
+    left:18px;
+    color: #1f1f1f;
+ }
+
+ .modal-content .modal .closeModal:hover {
+    color: #02C2FF;
+ } 
+
+.modal-content .modal p { 
+    color: #1f1f1f;
+    line-height: inherit;
+}
+
+.modal-content .modal textarea {
+    min-height: 156px;
+}
+
+.modal-content, .modal-content table {
+    color: #000;
+    font-size: 14px;
+}
+
+.modal-content .tablaAlertas td {
+    padding: 16px 8px;
+    border-top: 1px dotted #ccc;
+}

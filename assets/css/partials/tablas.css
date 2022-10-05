@@ -1,0 +1,364 @@
+@charset "UTF-8";
+
+
+.tabla-aa {
+    width: 100%;
+}
+.tabla-aa table {
+    width: 100%;
+    border:0; 
+    border-spacing: 0px;
+    border-collapse:collapse;
+}
+.tabla-aa table th {
+    background: #ffffff50;
+    padding: 14px 8px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.tabla-aa table tr:first-child th:first-child {
+    border-top-left-radius: 10px;
+}
+
+.tabla-aa table tr:first-child th:last-child {
+    border-top-right-radius: 10px;
+}
+
+.tabla-aa table tr.group td {
+    background: #ffffff10;
+    padding: 16px 8px;
+    border-right: none;
+}
+
+.tabla-aa table tbody tr td {
+    padding: 8px;
+    text-align: left;
+    min-height: 40px;
+    border-bottom: 1px dotted #5761C8;
+    border-right: 1px dotted #5761C8;
+}
+
+.tabla-aa table tbody tr td:last-child {
+    border-right:  none;
+}
+
+.tabla-aa { 
+    border-bottom: 4px solid #5761C8;
+ }
+
+ /* Tabla operación */
+
+ .tabla-aa.operacion table tbody tr td {
+     max-width: 400px;
+ }
+
+.tabla-aa table tr.group td:nth-child(2),
+.tabla-aa table tr.group td:nth-child(3),
+.tabla-aa table tr.group td:nth-child(4) {
+    text-align: center;
+}
+
+.tabla-aa table.mantencion tr td:nth-child(1),
+.tabla-aa table.mantencion tr td:nth-child(4),
+.tabla-aa table.mantencion tr td:nth-child(5),
+.tabla-aa table.mantencion tr td:nth-child(6),
+.tabla-aa table.planta tr td:nth-child(1),
+.tabla-aa table.planta tr td:nth-child(4),
+.tabla-aa table.planta tr td:nth-child(5),
+.tabla-aa table.planta tr td:nth-child(6) {
+    text-align: center;
+}
+
+.icon-circle {
+    display: block;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    text-align: center;
+    margin: auto;
+}
+.icon-circle .icon-asset {
+    font-size: 18px;
+}
+
+.icon-circle.ok { 
+    background: #18D642;
+    margin-top: 4px;
+}
+
+.icon-circle .icon-asset{ 
+    margin-top: 4px;
+}
+
+.icon-circle.redAlert .icon-asset{ 
+    margin-top: 2px;
+}
+
+.tabla-aa.operacion {
+    display: block;
+    max-height: 600px;
+}
+
+.tabla-aa table tbody tr:hover {
+    background: #313266
+}
+
+.tabla-aa.operacion table tbody tr td:first-child, .tabla-aa.operacion table tbody tr td:last-child {
+    text-align: center;
+} 
+.tabla-aa.operacion table tbody tr td:nth-child(3) span:not(.icon-asset) { 
+	display:block;
+}
+/*
+.tabla-aa.operacion table tbody tr td .tool-aa-operacion {
+    display: inline-block;
+    width: 20px;
+    margin: 0 8px;
+    position: relative;
+    cursor: pointer;
+}
+
+.tabla-aa.operacion table tbody tr td .tool-aa-operacion a {
+    color: #ffffff!important;
+}
+
+.tabla-aa.operacion table tbody tr td .tool-aa-operacion .tooltip {
+    display: none;
+    position: absolute;
+    width: 160px;
+    left: -120px;
+    top: -70px;
+    padding: 12px;
+    background: #000000;
+    border-radius: 8px;
+    height: 56px;
+}
+
+.tabla-aa.operacion table tbody tr td .tool-aa-operacion .tooltip::after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #000;
+    left: 120px;
+    bottom: -10px;
+}
+*/
+.tabla-aa.DetalleCC {
+    display: block;
+    max-height: 650px;
+}
+
+.tabla-aa.DetalleCC span.Ok::before {
+    content: ' ';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color:#18D642;
+    margin-right: 8px;
+}
+
+.tabla-aa.DetalleCC span.NOok::before {
+    content: ' ';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color:#ED1111;
+    margin-right: 8px;
+}
+
+.tabla-aa.notificaciones {
+    max-height: 400px;
+    display: block;
+}
+
+.tabla-aa.notificaciones table tbody tr td:nth-child(2) {
+    width: 550px;
+}
+
+.tabla-aa.notificaciones table tbody tr td:nth-child(4) {
+    text-align: center;
+}
+
+.tabla-aa.notificaciones table tbody tr td:last-child {
+    width: 165px;
+    text-align: center;
+}
+
+.tabla-aa.notificaciones table tbody tr a[data-tooltip] {
+	position: relative;
+}
+
+.tabla-aa.detallePUE table tbody tr td:last-child {
+    min-width: 180px;
+    text-align: center;
+}
+/*
+.tabla-aa.notificaciones table tbody tr a[data-tooltip] span {
+    width: 90px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+}
+
+.tabla-aa.detallePUE table tbody tr td .tool-aa-operacion {
+    display: inline-block;
+    width: 20px;
+    margin: 0 8px;
+    position: relative;
+    cursor: pointer;
+}
+
+table tbody tr td .tool-aa-operacion .tooltip {
+	display: none;
+	background: #00000095;
+	padding: 8px;
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+	border-radius: 8px;
+	width: 120px;
+	left: -90px;
+	top: 32px;
+	z-index: 2;
+}
+
+table tbody tr td .tool-aa-operacion:hover .tooltip {
+	display: block;
+    opacity: 1;
+}
+*/
+/*.tabla-aa a, .tabla-aa .tooltable {
+    position: relative;
+    text-decoration: none;
+}
+
+.tabla-aa a.icon-circle:before, .tabla-aa a.tooltable:before {
+	display: none;
+	content: attr(data-tooltip);
+	min-width: 120px;
+	min-height: 40px;
+	position: absolute;
+	bottom: 100%;
+	background: #000000;
+	border-radius: 8px;
+	color: #ffffff;
+	font-size: 12px;
+	top: -40px;
+	left: -61px;
+	padding:6px 8px;
+    line-height: 14px;
+    text-align: center;
+}
+
+.tabla-aa a.icon-circle:hover:before, .tabla-aa a.tooltable:hover:before {
+    display: block;
+}
+
+a.icon-circle, a.tooltable {
+    color: #ffffff;
+}*/
+
+.icon-circle.yellowAlert { 
+    background: #FFE802;
+    margin-top: 3px;
+    color: #1a1a1a;
+}
+
+.icon-circle.orangeAlert { 
+    background: #FF7A39;
+    margin-top: 3px;
+}
+
+.icon-circle.redAlert { 
+    background: #ED1111;
+    margin-top: 3px;
+}
+
+.tooltable .icon-asset {
+    display: block;
+    height: 24px;
+}
+
+.tabla-aa .tooltable {
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    width: 20px;
+    margin: 0 8px;
+    position: relative;
+    cursor: pointer;
+}
+
+.tabla-aa.DetalleCC .tooltable {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Ajustes pantallas Anglo */
+
+@media screen and (min-width: 1900px) {
+
+    .tabla-aa table tbody tr td {
+        padding: 18px;
+    }
+    .icon-circle {
+        width: 46px;
+        height: 46px;
+    }
+    .icon-circle .icon-asset {
+        font-size: 32px;
+    }
+    .icon-circle.redAlert .icon-asset {
+        margin-top: 5px;
+    }
+    .tooltable .icon-asset {
+        font-size: 42px;
+    }
+    .tabla-aa a.icon-circle:before {
+        min-width: 330px;
+        min-height: 40px;
+        color: #ffffff;
+        font-size: 24px;
+        top: -40px;
+        left: -148px;
+        line-height: 27px;
+    }
+    .tabla-aa a.tooltable:before {
+        min-width: 330px;
+        min-height: 40px;
+        color: #ffffff;
+        font-size: 24px;
+        top: -40px;
+        left: -280px;
+        line-height: 27px;
+    }
+    .tabla-aa .tooltable {
+        width: 40px;
+    }
+    .tooltable .icon-asset {
+        height: 44px;
+    }
+    .tabla-aa a.tooltable:after {
+        content: ' ';
+        display: none;
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid #000;
+        left: calc(50% - 13px);
+        top: 0px;
+    }
+    .tabla-aa a.tooltable:hover:after {
+        display: block;
+    }
+}

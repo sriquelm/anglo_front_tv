@@ -1,0 +1,105 @@
+@charset "UTF-8";
+/* Jost Font family */
+@font-face {
+    font-family: 'jost';
+    src: url('../../fonts/Jost/Jost-VariableFont_wght.ttf') format('ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'jost';
+    src: url('../../fonts/Jost/static/Jost-Bold.ttf') format('ttf');
+    font-style: normal;
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'jost';
+    src: url('../../fonts/Jost/static/Jost-Light.ttf') format('ttf');
+    font-style: normal;
+    font-weight: lighter;
+}
+/* Moserrat Font family */
+@font-face {
+    font-family: 'monserrat';
+    src: url('../../fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'monserrat';
+    src: url('../../fonts/Montserrat/static/Montserrat-Bold.ttf') format('ttf');
+    font-style: normal;
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'monserrat';
+    src: url('../../fonts/Montserrat/static/Montserrat-Light.ttf') format('ttf');
+    font-style: normal;
+    font-weight: lighter;
+}
+.display1 {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 500;
+    color: #FF9F43;
+}
+
+h1 { 
+    font-size: 34px;
+    font-weight: normal;
+    color: #FF9F43;
+}
+h2 { 
+    font-size: 28px;
+    font-weight: normal;
+}
+h3 { 
+    font-size: 21px;
+    font-weight: normal;
+}
+h4 { 
+    font-size: 17px;
+    font-weight: normal;
+}
+p { 
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+}
+a { color: #02C2FF; text-decoration: underline; cursor: pointer; }
+a:hover { color: #64dbff; }
+
+.bold { 
+    font-weight: bold!important;
+}
+.light { 
+    font-weight: lighter!important;
+}
+.text-left { 
+    text-align: left!important;
+}
+.text-right { 
+    text-align: right!important;
+}
+.text-center {
+    text-align: center!important;
+}
+.font-size-12 { 
+    font-size: 12px!important; 
+}
+.font-size-14 { 
+    font-size: 14px!important; 
+}
+.font-size-17 { 
+    font-size: 17px!important; 
+}
+.font-size-21 { 
+    font-size: 21px!important; 
+}
+.font-size-28 { 
+    font-size: 28px!important; 
+}
+.font-size-34 { 
+    font-size: 34px!important; 
+}
+

@@ -1,0 +1,45 @@
+
+
+.chartLabels {
+
+}
+
+.chartMaintenance {
+    border: 1px solid #ffffff;
+    display: flex;
+    flex-direction: row;
+}
+
+.chartMaintenance table.tituloysensores {
+    width: 260px;
+}
+
+.chartMaintenance table.tituloysensores tr th, 
+.chartMaintenance table.tituloysensores tr td, 
+.chartMaintenance table.DatosxDias tr th, 
+.chartMaintenance table.DatosxDias tr td  {
+    border-bottom: 1px solid #ffffff;
+    padding: 8px 16px;
+}
+
+.chartMaintenance table.DatosxDias tr th, 
+.chartMaintenance table.DatosxDias tr td  {
+    height: 33px;
+}
+
+.chartMaintenance table.tituloysensores tr:last-child th, .chartMaintenance table tr:last-child td {
+    border-bottom:0;
+}
+
+.chartMaintenance table.tituloysensores tr th { 
+    text-align: right;
+}
+
+.chartMaintenance table.tituloysensores tr td { 
+    text-align: left;
+}
+
+.datosDinamicos {
+    display: inline-block;
+    width: calc(100% - 260px);
+}
